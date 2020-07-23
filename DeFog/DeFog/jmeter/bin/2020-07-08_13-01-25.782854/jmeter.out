@@ -1,0 +1,7 @@
+Created the tree successfully using /home/farooq/DeFog/Experiments/DeFog/assets/ipokemon-assets/modified_iPokemon.jmx
+Starting standalone test @ Wed Jul 08 13:01:29 EEST 2020 (1594202489472)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Command: Shutdown received from /127.0.0.1
+Command: StopTestNow received from /127.0.0.1
+Tidying up ...    @ Wed Jul 08 13:02:03 EEST 2020 (1594202523906)
+... end of run

@@ -1,0 +1,285 @@
+[2020-07-03 17:15:46,877 INFO root] Taurus CLI Tool v1.14.2
+[2020-07-03 17:15:46,877 DEBUG root] Command-line options: {'log': '/tmp/bzt_ce2u2pou.log', 'option': ['modules.jmeter.properties.HOST=192.168.0.103', 'modules.jmeter.properties.Duration=300', 'modules.jmeter.properties.Threads=100', 'modules.jmeter.properties.Ramp=0'], 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2020-07-03 17:15:46,878 DEBUG root] Python: CPython 3.6.9
+[2020-07-03 17:15:46,878 DEBUG root] OS: uname_result(system='Linux', node='farooq-HP-EliteBook-840-G5', release='5.3.0-28-generic', version='#30~18.04.1-Ubuntu SMP Fri Jan 17 06:14:09 UTC 2020', machine='x86_64', processor='x86_64')
+[2020-07-03 17:15:46,878 DEBUG root] Adding JMX shorthand config for: ['../../assets/ipokemon-assets/iPokemon.jmx']
+[2020-07-03 17:15:46,878 DEBUG root] Dumping JSON config into /tmp/jmx_47z9m__3.json
+[2020-07-03 17:15:46,878 INFO root] Starting with configs: ['reporting.yaml', '/tmp/jmx_47z9m__3.json']
+[2020-07-03 17:15:46,878 DEBUG root] Using personal config: /home/farooq/.bzt-rc
+[2020-07-03 17:15:46,878 INFO Engine] Configuring...
+[2020-07-03 17:15:46,886 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml']
+[2020-07-03 17:15:46,886 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml']
+[2020-07-03 17:15:46,886 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.6/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2020-07-03 17:15:46,905 DEBUG Engine] User configs list: ['/home/farooq/.bzt-rc', 'reporting.yaml', '/tmp/jmx_47z9m__3.json']
+[2020-07-03 17:15:46,905 DEBUG Engine.Configuration] Configs: ['/home/farooq/.bzt-rc', 'reporting.yaml', '/tmp/jmx_47z9m__3.json']
+[2020-07-03 17:15:46,906 DEBUG Engine.Configuration] Reading /home/farooq/.bzt-rc as YAML
+[2020-07-03 17:15:46,908 DEBUG Engine.Configuration] Reading reporting.yaml as YAML
+[2020-07-03 17:15:46,910 DEBUG Engine.Configuration] Reading /tmp/jmx_47z9m__3.json as YAML
+[2020-07-03 17:15:46,911 DEBUG Engine.Configuration] Configs: ['/home/farooq/.bzt-rc', 'reporting.yaml', '/tmp/jmx_47z9m__3.json']
+[2020-07-03 17:15:46,911 DEBUG Engine.Configuration] Reading /home/farooq/.bzt-rc as YAML
+[2020-07-03 17:15:46,914 DEBUG Engine.Configuration] Reading reporting.yaml as YAML
+[2020-07-03 17:15:46,915 DEBUG Engine.Configuration] Reading /tmp/jmx_47z9m__3.json as YAML
+[2020-07-03 17:15:46,916 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.14.2&installID=linux-94b86d91935d
+[2020-07-03 17:15:46,916 DEBUG ConfigOverrider] Applying modules.jmeter.properties.HOST=192.168.0.103
+[2020-07-03 17:15:46,917 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.14.2&installID=linux-94b86d91935d
+[2020-07-03 17:15:46,917 DEBUG ConfigOverrider] Applying: [HOST]=192.168.0.103
+[2020-07-03 17:15:46,917 DEBUG ConfigOverrider] Parsed override value: '192.168.0.103' -> '192.168.0.103' (<class 'str'>)
+[2020-07-03 17:15:46,917 DEBUG ConfigOverrider] Applying modules.jmeter.properties.Duration=300
+[2020-07-03 17:15:46,917 DEBUG ConfigOverrider] Applying: [Duration]=300
+[2020-07-03 17:15:46,917 DEBUG ConfigOverrider] Parsed override value: '300' -> 300 (<class 'int'>)
+[2020-07-03 17:15:46,917 DEBUG ConfigOverrider] Applying modules.jmeter.properties.Threads=100
+[2020-07-03 17:15:46,918 DEBUG ConfigOverrider] Applying: [Threads]=100
+[2020-07-03 17:15:46,918 DEBUG ConfigOverrider] Parsed override value: '100' -> 100 (<class 'int'>)
+[2020-07-03 17:15:46,918 DEBUG ConfigOverrider] Applying modules.jmeter.properties.Ramp=0
+[2020-07-03 17:15:46,918 DEBUG ConfigOverrider] Applying: [Ramp]=0
+[2020-07-03 17:15:46,918 DEBUG ConfigOverrider] Parsed override value: '0' -> 0 (<class 'int'>)
+[2020-07-03 17:15:46,918 INFO Engine] Artifacts dir: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591
+[2020-07-03 17:15:46,920 DEBUG Engine] New artifact filename: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/effective
+[2020-07-03 17:15:46,920 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org
+[2020-07-03 17:15:46,921 DEBUG Engine.Configuration] Dumping YAML config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/effective.yml
+[2020-07-03 17:15:46,933 DEBUG Engine.Configuration] Dumping JSON config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/effective.json
+[2020-07-03 17:15:46,933 DEBUG Engine] New artifact filename: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/merged.yml
+[2020-07-03 17:15:46,933 DEBUG Engine.Configuration] Dumping YAML config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/merged.yml
+[2020-07-03 17:15:46,934 DEBUG Engine] New artifact filename: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/merged.json
+[2020-07-03 17:15:46,934 DEBUG Engine.Configuration] Dumping JSON config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/merged.json
+[2020-07-03 17:15:46,935 DEBUG Engine] Add existing artifact (move=False): reporting.yaml
+[2020-07-03 17:15:46,935 DEBUG Engine] Copying reporting.yaml to /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/reporting.yaml
+[2020-07-03 17:15:46,935 DEBUG Engine] Add existing artifact (move=False): /tmp/jmx_47z9m__3.json
+[2020-07-03 17:15:46,935 DEBUG Engine] Copying /tmp/jmx_47z9m__3.json to /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/jmx_47z9m__3.json
+[2020-07-03 17:15:46,935 DEBUG root] Closing log handler: /tmp/bzt_ce2u2pou.log
+[2020-07-03 17:15:46,936 DEBUG root] Switched writing logs to /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/bzt.log
+[2020-07-03 17:15:46,936 DEBUG root] Linting config
+[2020-07-03 17:15:46,937 INFO Engine] Preparing...
+[2020-07-03 17:15:46,938 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2020-07-03 17:15:46,938 DEBUG root] Importing module: bzt.modules.aggregator
+[2020-07-03 17:15:47,080 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/aggregator.py'>
+[2020-07-03 17:15:47,080 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2020-07-03 17:15:47,081 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2020-07-03 17:15:47,081 DEBUG root] Importing module: bzt.modules.monitoring
+[2020-07-03 17:15:47,083 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/monitoring.py'>
+[2020-07-03 17:15:47,100 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2020-07-03 17:15:47,100 DEBUG root] Importing module: bzt.modules.provisioning
+[2020-07-03 17:15:47,100 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/provisioning.py'>
+[2020-07-03 17:15:47,100 DEBUG Engine] Module config: jmeter {'class': 'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': {'http': 'bzt.jmx.http.HTTPProtocolHandler'}, 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst'], 'properties': {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'HOST': '192.168.0.103', 'Duration': 300, 'Threads': 100, 'Ramp': 0}}
+[2020-07-03 17:15:47,100 DEBUG root] Importing module: bzt.modules.jmeter
+[2020-07-03 17:15:47,108 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/jmeter.py'>
+[2020-07-03 17:15:47,108 DEBUG Engine.local] Preparing executor: jmeter/139920326763968
+[2020-07-03 17:15:47,108 DEBUG Engine] New artifact filename: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/jmeter.log
+[2020-07-03 17:15:47,108 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2020-07-03 17:15:47,109 DEBUG Engine.jmeter] Port 4445 is free
+[2020-07-03 17:15:47,109 DEBUG Engine.jmeter] Using port 4445 for management
+[2020-07-03 17:15:47,109 DEBUG Engine.jmeter] Extract {'script': '../../assets/ipokemon-assets/iPokemon.jmx'} into scenarios
+[2020-07-03 17:15:47,109 DEBUG Engine.jmeter] Additional properties: {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'jmeterengine.force.system.exit': 'true', 'summariser.name': '', 'HOST': '192.168.0.103', 'Duration': 300, 'Threads': 100, 'Ramp': 0, 'jmeterengine.nongui.port': 4445, 'jmeterengine.nongui.maxport': 4445, 'jmeter.save.saveservice.timestamp_format': 'ms', 'sampleresult.default.encoding': 'UTF-8', 'user.classpath': '/home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591:/home/farooq/DeFog/Experiments/DeFog/assets/ipokemon-assets'}
+[2020-07-03 17:15:47,109 DEBUG Engine] New artifact filename: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/jmeter-bzt.properties
+[2020-07-03 17:15:47,109 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2020-07-03 17:15:47,110 DEBUG root] Executing shell: ['java', '-version'] at .
+[2020-07-03 17:15:47,146 DEBUG Engine.jmeter.JavaVM] JavaVM output: openjdk version "11.0.7" 2020-04-14
+OpenJDK Runtime Environment (build 11.0.7+10-post-Ubuntu-2ubuntu218.04)
+OpenJDK 64-Bit Server VM (build 11.0.7+10-post-Ubuntu-2ubuntu218.04, mixed mode, sharing)
+
+[2020-07-03 17:15:47,146 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2020-07-03 17:15:47,146 DEBUG Engine.jmeter.JMeter] Trying JMeter..
+[2020-07-03 17:15:47,147 DEBUG root] Executing shell: ['/home/farooq/.bzt/jmeter-taurus/5.2.1/bin/jmeter.sh', '-j', '/tmp/jmetermk9j4l0nlog', '--version'] at .
+[2020-07-03 17:15:47,994 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) |
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 5.2.1
+
+Copyright (c) 1999-2019 The Apache Software Foundation
+
+ / 
+[2020-07-03 17:15:47,998 DEBUG Engine] New artifact filename: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/kpi.jtl
+[2020-07-03 17:15:47,998 DEBUG Engine] New artifact filename: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/error.jtl
+[2020-07-03 17:15:48,000 DEBUG Engine.jmeter.LoadSettingsProcessor] Load: LoadSpec(concurrency=None, throughput=None, ramp_up=None, hold=0, iterations=1, duration=None, steps=None)
+[2020-07-03 17:15:48,000 DEBUG Engine.jmeter.LoadSettingsProcessor] Thread group detection: duration not found, regular ThreadGroup will be used
+[2020-07-03 17:15:48,000 DEBUG Engine.jmeter.LoadSettingsProcessor] No iterations/concurrency/duration found, thread group modification is skipped
+[2020-07-03 17:15:48,000 DEBUG JMX] Saving JMX to: /home/farooq/DeFog/Experiments/DeFog/assets/ipokemon-assets/modified_iPokemon.jmx
+[2020-07-03 17:15:48,002 DEBUG root] Executing shell: ['/home/farooq/.bzt/jmeter-taurus/5.2.1/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/home/farooq/DeFog/Experiments/DeFog/assets/ipokemon-assets/modified_iPokemon.jmx'] at .
+[2020-07-03 17:15:48,084 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.14.2&installID=linux-94b86d91935d HTTP/1.1" 200 40
+[2020-07-03 17:15:48,085 DEBUG Engine] Taurus updates info: {'latest': '1.14.2', 'needsUpgrade': False}
+[2020-07-03 17:15:48,086 DEBUG Engine] Installation is up-to-date
+[2020-07-03 17:15:49,296 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /home/farooq/DeFog/Experiments/DeFog/assets/ipokemon-assets/modified_iPokemon.jmx
+2020-07-03 17:15:48,677 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2020-07-03 17:15:48,717 INFO o.j.r.JARSourceHTTP: Found cached repo
+2020-07-03 17:15:48,872 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.9, jpgc-dummy=0.4, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.3, jpgc-tst=2.5, jmeter-core=5.2.1, jmeter-ftp=5.2.1, jmeter-http=5.2.1, jmeter-jdbc=5.2.1, jmeter-jms=5.2.1, jmeter-junit=5.2.1, jmeter-java=5.2.1, jmeter-ldap=5.2.1, jmeter-mail=5.2.1, jmeter-mongodb=5.2.1, jmeter-native=5.2.1, jmeter-tcp=5.2.1, jmeter-components=5.2.1]
+2020-07-03 17:15:48,874 INFO o.j.r.PluginManagerCMD: Params line is: /home/farooq/DeFog/Experiments/DeFog/assets/ipokemon-assets/modified_iPokemon.jmx
+2020-07-03 17:15:49,124 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-07-03 17:15:49,135 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-07-03 17:15:49,139 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-07-03 17:15:49,223 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-07-03 17:15:49,223 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-07-03 17:15:49,223 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-07-03 17:15:49,223 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-07-03 17:15:49,223 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-07-03 17:15:49,224 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-07-03 17:15:49,262 INFO o.j.r.PluginManager: Finishing without changes
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/home/farooq/.bzt/jmeter-taurus/5.2.1/lib/xstream-1.4.11.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+
+[2020-07-03 17:15:49,296 DEBUG Engine] New artifact filename: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/jmeter.out
+[2020-07-03 17:15:49,296 DEBUG Engine] New artifact filename: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/jmeter.err
+[2020-07-03 17:15:49,298 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2020-07-03 17:15:49,298 DEBUG root] Importing module: bzt.modules.reporting
+[2020-07-03 17:15:49,304 DEBUG easyprocess] version=0.3
+[2020-07-03 17:15:49,305 DEBUG pyvirtualdisplay] version=0.2.5
+[2020-07-03 17:15:49,309 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/reporting.py'>
+[2020-07-03 17:15:49,309 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter'}
+[2020-07-03 17:15:49,309 DEBUG root] Importing module: bzt.modules.console
+[2020-07-03 17:15:49,309 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python3.6/dist-packages/bzt/modules/console.py'>
+[2020-07-03 17:15:49,314 DEBUG Engine.Configuration] Dumping YAML config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/effective.yml
+[2020-07-03 17:15:49,328 DEBUG Engine.Configuration] Dumping JSON config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/effective.json
+[2020-07-03 17:15:49,329 INFO Engine] Starting...
+[2020-07-03 17:15:49,329 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7f41db7c6dd8>
+[2020-07-03 17:15:49,329 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x7f41db7c67f0>
+[2020-07-03 17:15:49,329 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f41bd59b828>
+[2020-07-03 17:15:49,329 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7f41db83b198>
+[2020-07-03 17:15:49,330 INFO Engine.console] Waiting for results...
+[2020-07-03 17:15:49,330 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f41d3ce0a90>
+[2020-07-03 17:15:49,330 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7f41bd6076a0>
+[2020-07-03 17:15:49,330 DEBUG Engine.local] Delay setup for jmeter/iPokemon.jmx: 0(start-at) + 0(delay) = 0
+[2020-07-03 17:15:49,331 DEBUG Engine.Configuration] Dumping YAML config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/effective.yml
+[2020-07-03 17:15:49,345 DEBUG Engine.Configuration] Dumping JSON config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/effective.json
+[2020-07-03 17:15:49,345 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2020-07-03 17:15:49,345 DEBUG root] Leveled up log file verbosity
+[2020-07-03 17:15:49,346 DEBUG root] Executing shell: ['/home/farooq/.bzt/jmeter-taurus/5.2.1/bin/jmeter.sh', '-t', '/home/farooq/DeFog/Experiments/DeFog/assets/ipokemon-assets/modified_iPokemon.jmx', '-j', '/home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/jmeter.log', '-q', '/home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/jmeter-bzt.properties', '-n'] at /home/farooq/DeFog/Experiments/DeFog/jmeter/bin
+[2020-07-03 17:15:49,349 DEBUG Engine.local] Starting execution: jmeter/iPokemon.jmx, rest of available slots: 9223372036854775806
+[2020-07-03 17:15:49,349 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2020-07-03 17:15:49,564 INFO Engine.console] Waiting for finish...
+[2020-07-03 17:15:53,369 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 3s
+[2020-07-03 17:15:56,049 WARNING Engine] Please wait for graceful shutdown...
+[2020-07-03 17:15:56,056 DEBUG root] Leveled up log file verbosity
+[2020-07-03 17:15:56,056 INFO Engine] Shutting down...
+[2020-07-03 17:15:56,060 DEBUG Engine] Current stop reason: 
+[2020-07-03 17:15:56,060 DEBUG Engine.local] Shutdown jmeter/iPokemon.jmx
+[2020-07-03 17:15:57,061 INFO Engine.jmeter] Sending Shutdown command to JMeter on port 4445...
+[2020-07-03 17:16:02,075 INFO Engine.jmeter] Sending StopTestNow command to JMeter on port 4445...
+[2020-07-03 17:16:03,085 DEBUG Engine.jmeter] JMeter stopped on StopTestNow command
+[2020-07-03 17:16:03,086 DEBUG Engine.console] Restoring logging streams, [<StreamHandler (INFO)>]/{<StreamHandler (INFO)>: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>}
+[2020-07-03 17:16:03,090 DEBUG Engine.Configuration] Dumping YAML config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/effective.yml
+[2020-07-03 17:16:03,102 DEBUG Engine.Configuration] Dumping JSON config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/effective.json
+[2020-07-03 17:16:03,103 WARNING root] Keyboard interrupt
+[2020-07-03 17:16:03,103 DEBUG root] KeyboardInterrupt: 
+  File "/usr/local/lib/python3.6/dist-packages/bzt/cli.py", line 259, in perform
+    self.engine.run()
+  File "/usr/local/lib/python3.6/dist-packages/bzt/engine/engine.py", line 248, in run
+    reraise(exc_info, exc_value)
+  File "/usr/local/lib/python3.6/dist-packages/bzt/six/py3.py", line 86, in reraise
+    raise exc
+  File "/usr/local/lib/python3.6/dist-packages/bzt/engine/engine.py", line 227, in run
+    self._wait()
+  File "/usr/local/lib/python3.6/dist-packages/bzt/engine/engine.py", line 276, in _wait
+    time.sleep(delay)
+[2020-07-03 17:16:03,104 INFO Engine] Post-processing...
+[2020-07-03 17:16:03,104 DEBUG Engine.local] Post-process jmeter/iPokemon.jmx
+[2020-07-03 17:16:03,104 DEBUG Engine] Add existing artifact (move=True): /home/farooq/DeFog/Experiments/DeFog/assets/ipokemon-assets/modified_iPokemon.jmx
+[2020-07-03 17:16:03,104 DEBUG Engine] Moving /home/farooq/DeFog/Experiments/DeFog/assets/ipokemon-assets/modified_iPokemon.jmx to /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/modified_iPokemon.jmx
+[2020-07-03 17:16:03,104 DEBUG Engine.jmeter.JTLErrorsReader] Read bytes from error file: 17
+[2020-07-03 17:16:03,104 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read: 7 lines / 629 bytes (at speed 1048576)
+[2020-07-03 17:16:03,105 DEBUG Engine.jmeter.JTLReader] Buffer len: 3; Known errors count: 1
+[2020-07-03 17:16:03,105 DEBUG Engine.jmeter.JTLReader] Aggregating: 1593785753, 3 in buffer
+[2020-07-03 17:16:03,108 DEBUG Engine.jmeter.JTLReader] Buffer len: 2; Known errors count: 1
+[2020-07-03 17:16:03,125 DEBUG Engine.jmeter.JTLReader] Aggregating: 1593785754, 2 in buffer
+[2020-07-03 17:16:03,128 DEBUG Engine.jmeter.JTLReader] Buffer len: 1; Known errors count: 1
+[2020-07-03 17:16:03,144 DEBUG Engine.jmeter.JTLReader] Aggregating: 1593785755, 1 in buffer
+[2020-07-03 17:16:03,148 DEBUG Engine.jmeter.JTLReader] Buffer len: 0; Known errors count: 1
+[2020-07-03 17:16:03,148 DEBUG Engine.consolidator] Consolidator buffer[5]: dict_keys([1593785751, 1593785752, 1593785753, 1593785754, 1593785755])
+[2020-07-03 17:16:03,148 DEBUG Engine.consolidator] Merging into 1593785751
+[2020-07-03 17:16:03,148 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-07-03 17:16:03,173 DEBUG Engine.consolidator] Processed datapoint: 1593785751/ConsolidatingAggregator@139920831965168
+[2020-07-03 17:16:03,173 DEBUG Engine.consolidator] Merging into 1593785752
+[2020-07-03 17:16:03,173 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-07-03 17:16:03,203 DEBUG Engine.consolidator] Processed datapoint: 1593785752/ConsolidatingAggregator@139920831965168
+[2020-07-03 17:16:03,203 DEBUG Engine.consolidator] Merging into 1593785753
+[2020-07-03 17:16:03,203 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-07-03 17:16:03,221 DEBUG Engine.consolidator] Processed datapoint: 1593785753/ConsolidatingAggregator@139920831965168
+[2020-07-03 17:16:03,221 DEBUG Engine.consolidator] Merging into 1593785754
+[2020-07-03 17:16:03,221 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-07-03 17:16:03,239 DEBUG Engine.consolidator] Processed datapoint: 1593785754/ConsolidatingAggregator@139920831965168
+[2020-07-03 17:16:03,239 DEBUG Engine.consolidator] Merging into 1593785755
+[2020-07-03 17:16:03,240 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-07-03 17:16:03,257 DEBUG Engine.consolidator] Processed datapoint: 1593785755/ConsolidatingAggregator@139920831965168
+[2020-07-03 17:16:03,257 INFO Engine.final-stats] Test duration: 0:00:14
+[2020-07-03 17:16:03,257 INFO Engine.final-stats] Samples count: 151, 15.23% failures
+[2020-07-03 17:16:03,258 INFO Engine.final-stats] Average times: total 0.391, latency 0.325, connect 0.309
+[2020-07-03 17:16:03,258 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B         0.009 (0x(B
+(0x(B          50.0 (0x(B         0.078 (0x(B
+(0x(B          90.0 (0x(B         1.092 (0x(B
+(0x(B          95.0 (0x(B         1.335 (0x(B
+(0x(B          99.0 (0x(B         3.092 (0x(B
+(0x(B          99.9 (0x(B         3.094 (0x(B
+(0x(B         100.0 (0x(B         3.094 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2020-07-03 17:16:03,259 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B
+(0x(B label  (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error                                       (0x(B
+(0tqqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqu(B
+(0x(B cc     (0x(B   OK   (0x(B 100.00% (0x(B  0.359 (0x(B                                             (0x(B
+(0x(B cu     (0x(B   OK   (0x(B 100.00% (0x(B  0.033 (0x(B                                             (0x(B
+(0x(B id     (0x(B   OK   (0x(B 100.00% (0x(B  0.391 (0x(B                                             (0x(B
+(0x(B mas/CN (0x(B   OK   (0x(B 100.00% (0x(B  0.643 (0x(B                                             (0x(B
+(0x(B pd     (0x(B   OK   (0x(B 100.00% (0x(B  0.801 (0x(B                                             (0x(B
+(0x(B pma/1  (0x(B   OK   (0x(B 100.00% (0x(B  0.083 (0x(B                                             (0x(B
+(0x(B pma/23 (0x(B   OK   (0x(B 100.00% (0x(B  0.125 (0x(B                                             (0x(B
+(0x(B pma/4  (0x(B   OK   (0x(B 100.00% (0x(B  0.918 (0x(B                                             (0x(B
+(0x(B pma/7  (0x(B   OK   (0x(B 100.00% (0x(B  0.133 (0x(B                                             (0x(B
+(0x(B r/XX   (0x(B   OK   (0x(B 100.00% (0x(B  0.460 (0x(B                                             (0x(B
+(0x(B u      (0x(B   OK   (0x(B 100.00% (0x(B  0.551 (0x(B                                             (0x(B
+(0x(B upm    (0x(B  FAIL  (0x(B  76.32% (0x(B  0.476 (0x(B Non HTTP response message: Connection reset (0x(B
+(0x(B ur     (0x(B   OK   (0x(B 100.00% (0x(B  0.066 (0x(B                                             (0x(B
+(0x(B uu     (0x(B  FAIL  (0x(B  76.27% (0x(B  0.331 (0x(B Non HTTP response message: Connection reset (0x(B
+(0x(B wpm    (0x(B   OK   (0x(B 100.00% (0x(B  0.342 (0x(B                                             (0x(B
+(0mqqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B
+[2020-07-03 17:16:03,259 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2020-07-03 17:16:03,259 INFO Engine.final-stats] Test duration: 0:00:14
+[2020-07-03 17:16:03,259 INFO Engine.final-stats] Samples count: 151, 15.23% failures
+[2020-07-03 17:16:03,260 INFO Engine.final-stats] Average times: total 0.391, latency 0.325, connect 0.309
+[2020-07-03 17:16:03,260 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B         0.009 (0x(B
+(0x(B          50.0 (0x(B         0.078 (0x(B
+(0x(B          90.0 (0x(B         1.092 (0x(B
+(0x(B          95.0 (0x(B         1.335 (0x(B
+(0x(B          99.0 (0x(B         3.092 (0x(B
+(0x(B          99.9 (0x(B         3.094 (0x(B
+(0x(B         100.0 (0x(B         3.094 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2020-07-03 17:16:03,261 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqk(B
+(0x(B label  (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error                                       (0x(B
+(0tqqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqu(B
+(0x(B cc     (0x(B   OK   (0x(B 100.00% (0x(B  0.359 (0x(B                                             (0x(B
+(0x(B cu     (0x(B   OK   (0x(B 100.00% (0x(B  0.033 (0x(B                                             (0x(B
+(0x(B id     (0x(B   OK   (0x(B 100.00% (0x(B  0.391 (0x(B                                             (0x(B
+(0x(B mas/CN (0x(B   OK   (0x(B 100.00% (0x(B  0.643 (0x(B                                             (0x(B
+(0x(B pd     (0x(B   OK   (0x(B 100.00% (0x(B  0.801 (0x(B                                             (0x(B
+(0x(B pma/1  (0x(B   OK   (0x(B 100.00% (0x(B  0.083 (0x(B                                             (0x(B
+(0x(B pma/23 (0x(B   OK   (0x(B 100.00% (0x(B  0.125 (0x(B                                             (0x(B
+(0x(B pma/4  (0x(B   OK   (0x(B 100.00% (0x(B  0.918 (0x(B                                             (0x(B
+(0x(B pma/7  (0x(B   OK   (0x(B 100.00% (0x(B  0.133 (0x(B                                             (0x(B
+(0x(B r/XX   (0x(B   OK   (0x(B 100.00% (0x(B  0.460 (0x(B                                             (0x(B
+(0x(B u      (0x(B   OK   (0x(B 100.00% (0x(B  0.551 (0x(B                                             (0x(B
+(0x(B upm    (0x(B  FAIL  (0x(B  76.32% (0x(B  0.476 (0x(B Non HTTP response message: Connection reset (0x(B
+(0x(B ur     (0x(B   OK   (0x(B 100.00% (0x(B  0.066 (0x(B                                             (0x(B
+(0x(B uu     (0x(B  FAIL  (0x(B  76.27% (0x(B  0.331 (0x(B Non HTTP response message: Connection reset (0x(B
+(0x(B wpm    (0x(B   OK   (0x(B 100.00% (0x(B  0.342 (0x(B                                             (0x(B
+(0mqqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqj(B
+[2020-07-03 17:16:03,261 INFO Engine.final-stats] 9 failed samples: upm
+[2020-07-03 17:16:03,261 INFO Engine.final-stats] 14 failed samples: uu
+[2020-07-03 17:16:03,261 INFO Engine.final-stats] Dumping final status as XML: taurusreport.xml
+[2020-07-03 17:16:03,355 INFO Engine.final-stats] Dumping final status as CSV: taurusreport.csv
+[2020-07-03 17:16:03,359 DEBUG Engine.Configuration] Dumping YAML config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/effective.yml
+[2020-07-03 17:16:03,371 DEBUG Engine.Configuration] Dumping JSON config into /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/effective.json
+[2020-07-03 17:16:03,371 INFO root] Artifacts dir: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591
+[2020-07-03 17:16:03,372 WARNING root] Done performing with code: 1
+[2020-07-03 17:16:03,372 DEBUG root] Closing log handler: /home/farooq/DeFog/Experiments/DeFog/jmeter/bin/2020-07-03_17-15-46.918591/bzt.log
