@@ -4,7 +4,7 @@ Underwater Edge Computing deals with the edge deployment mode of "DeFog: Fog Com
 
 We Use Raspberry Pi 4B as an edge device.
 
-Read the instructions mentioned in /DeFog/README.md in DeFog on how to set up DeFog for edge deployment mode.
+Read the instructions mentioned in (DeFog/README.md) in DeFog on how to set up DeFog for edge deployment mode.
 
 Four applications - YOLO, PocketSphinx, Aeneas, iPokeman are benchmarked for underwater edge computing.
 
