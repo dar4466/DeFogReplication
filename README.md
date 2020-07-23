@@ -1,6 +1,6 @@
-# UnderwaterEdgeComputing
+# Defog Replication
 
-Underwater Edge Computing deals with the edge deployment mode of "DeFog: Fog Computing Benchmarks" : "Jonathan McChesney, Nan Wang, Ashish Tanwer, Eyal de Lara, and Blesson Varghese, "DeFog: Fog Computing Benchmarks," ACM/IEEE Symposium on Edge Computing, 2019". (DeFog folder). The DeFog repository https://github.com/qub-blesson/DeFog has been used.
+ Replication of the edge deployment mode of "DeFog: Fog Computing Benchmarks" : "Jonathan McChesney, Nan Wang, Ashish Tanwer, Eyal de Lara, and Blesson Varghese, "DeFog: Fog Computing Benchmarks," ACM/IEEE Symposium on Edge Computing, 2019". (DeFog folder). The DeFog repository https://github.com/qub-blesson/DeFog has been used.
 
 We Use Raspberry Pi 4B as an edge device.
 
@@ -14,4 +14,12 @@ In DeFog, they have mentioned they send concurrent requests using Jmeter but I c
 
 For YOLO, PocketSphinx and Aeneas - there is a code to simulate concurrent requests for 2,5,10,25 and 50 users in the concurrent folder.
 
-- scp the
+scp the concurrent user files (twousers.sh, fiveusers.sh and so on) to the docker folder on the edge device after the dockers have been build and pass the required parmaters for the deployment modes and applications 
+
+- For YOLO:
+```
+$ scp twousers.sh edgeuser@192.XXX.XXX.XXXX:/home/pi/defog/yolobuild/Experiments/YOLO/docker
+$ ssh edgeuser@edgeaddress
+$ cd /home/pi/defog/yolobuild/Experiments/YOLO/docker
+$ . twousers.sh 0 0 | sudo tee filename.txt
+```
