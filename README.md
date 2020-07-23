@@ -2,11 +2,11 @@
 
  Replication of the edge deployment mode of "DeFog: Fog Computing Benchmarks" : "Jonathan McChesney, Nan Wang, Ashish Tanwer, Eyal de Lara, and Blesson Varghese, "DeFog: Fog Computing Benchmarks," ACM/IEEE Symposium on Edge Computing, 2019". (DeFog folder). The DeFog repository https://github.com/qub-blesson/DeFog has been used.
 
-We Use Raspberry Pi 4B as an edge device.
+We Use Raspberry Pi 4B (4 GB RAM) as an edge device.
 
-Read the instructions mentioned in (DeFog/README.md) in DeFog on how to set up DeFog for edge deployment mode.
+**Read the instructions mentioned in (DeFog/README.md) in DeFog on how to set up DeFog for edge deployment mode**
 
-Four applications - YOLO, PocketSphinx, Aeneas, iPokeman are benchmarked for underwater edge computing.
+Four applications - YOLO, PocketSphinx, Aeneas, iPokeman are benchmarked for defog replication here. 
 
 ## How to send requests for Concurrency
 
@@ -16,10 +16,14 @@ For YOLO, PocketSphinx and Aeneas - there is a code to simulate concurrent reque
 
 scp the concurrent user files (twousers.sh, fiveusers.sh and so on) to the docker folder on the edge device after the dockers have been build and pass the required parmaters for the deployment modes and applications 
 
-- For YOLO:
+- For instance for YOLO (for fifty concurrent users):
 ```
-$ scp twousers.sh edgeuser@192.XXX.XXX.XXXX:/home/pi/defog/yolobuild/Experiments/YOLO/docker
+$ scp 50users.sh edgeuser@192.XXX.XXX.XXXX:/home/pi/defog/yolobuild/Experiments/YOLO/docker
 $ ssh edgeuser@edgeaddress
 $ cd /home/pi/defog/yolobuild/Experiments/YOLO/docker
 $ . twousers.sh 0 0 | sudo tee filename.txt
 ```
+
+Repeat the above for other users and the same procedure is to be followed for other applications. 
+
+**I used raspberry pi 4B as an edge node and when I passed 25 or more concurrent requests the wireless interface on raspberry somehow got disabled and the ssh connection to the raspberry got lost and hence it is advisable to save the results to some file (that is why sudo tee filename.txt). Once i restart the raspberry the wireless interface works normally and the results can be obtained from the file.** 
