@@ -31,12 +31,12 @@ Repeat the above for other users and the same procedure is to be followed for ot
 #### If Docker Volume Mount Error when running DeFog (For YOLO, PocketSphinx, Aeneas)
 
 Sometimes the volumes are not mounted to docker containers and an error is thrown that "cannot find mnt/config and mnt/assets"
-To overcome this error I manually SSH into edge node and go to the docker build scripts for appliactions (like for yolo it is /home/pi/defog/yolobuild/Experiments/YOLO/docker) and execute runedge.sh. 
+To overcome this error I manually SSH into edge node and go to the docker scripts directory for applications on edge node (for instance,for yolo it is */home/pi/defog/yolobuild/Experiments/YOLO/docker*) and execute *. runedge.sh*. 
 
-Dont forget to pass the parameters to the runedge.ssh 
-- For YOLO: .runedge.sh 0 0 
-- For PocketSphinx: . runedge.sh 1 0 
-- For Aeneas: . runedge.sh 2 0 
+Dont forget to pass the parameters to the runedge.ssh
+- For YOLO:   . runedge.sh 0 0 
+- For PocketSphinx:   . runedge.sh 1 0 
+- For Aeneas:   . runedge.sh 2 0 
 
 Sample Code for running YOLO 
 ```
