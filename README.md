@@ -27,3 +27,21 @@ $ . twousers.sh 0 0 | sudo tee filename.txt
 Repeat the above for other users and the same procedure is to be followed for other applications. 
 
 **I used raspberry pi 4B as an edge node and when I passed 25 or more concurrent requests the wireless interface on raspberry somehow got disabled and the ssh connection to the raspberry got lost and hence it is advisable to save the results to some file (that is why sudo tee filename.txt). Once i restart the raspberry the wireless interface works normally and the results can be obtained from the file.** 
+
+## If Docker Volume Mount Error when running DeFog (For YOLO, PocketSphinx, Aeneas)
+
+Sometimes the volumes are not mounted to docker containers and an error is thrown that "cannot find mnt/config and mnt/assets"
+To overcome this error I manually SSH into edge node and go to the docker build scripts for appliactions (like for yolo it is /home/pi/defog/yolobuild/Experiments/YOLO/docker) and execute runedge.sh. 
+
+Dont forget to pass the parameters to the runedge.ssh 
+- For YOLO: .runedge.sh 0 0 
+- For PocketSphinx: . runedge.sh 1 0 
+- For Aeneas: . runedge.sh 2 0 
+
+Sample Code for running YOLO 
+```
+$ ssh edgeuser@edgeaddress
+$ cd /home/pi/defog/yolobuild/Experiments/YOLO/docker
+$ . runedge.sh 0 0 | sudo tee filename.txt
+```
+
