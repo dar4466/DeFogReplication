@@ -14,7 +14,7 @@ In DeFog, they have mentioned they send concurrent requests using Jmeter but I c
 
 For YOLO, PocketSphinx and Aeneas - there is a code to simulate concurrent requests for 2,5,10,25 and 50 users in the concurrent folder.
 
-scp the concurrent user files (twousers.sh, fiveusers.sh and so on) to the docker folder on the edge device after the dockers have been build and pass the required parmaters for the deployment modes and applications 
+scp the concurrent user files (twousers.sh, fiveusers.sh and so on) to the docker folder on the edge device after the dockers have been build and pass the required parameters for the deployment modes and applications 
 
 - For instance for YOLO (for fifty concurrent users):
 ```
