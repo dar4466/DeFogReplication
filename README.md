@@ -12,7 +12,7 @@ Four applications - YOLO, PocketSphinx, Aeneas, iPokeman are benchmarked for def
 
 In DeFog, they have mentioned they send concurrent requests using Jmeter but I could only see the jmeter setup available for iPokeman only. 
 
-For YOLO, PocketSphinx and Aeneas - there is a code to simulate concurrent requests for 2,5,10,25 and 50 users in the concurrent folder.
+For YOLO, PocketSphinx and Aeneas - there is a code to simulate concurrent requests for 2,5,10,25 and 50 users in the "concurrent users" folder.
 
 scp the concurrent user files (twousers.sh, fiveusers.sh and so on) to the docker folder on the edge device after the dockers have been build and pass the required parameters for the deployment modes and applications 
 
@@ -21,7 +21,7 @@ scp the concurrent user files (twousers.sh, fiveusers.sh and so on) to the docke
 $ scp 50users.sh edgeuser@192.XXX.XXX.XXXX:/home/pi/defog/yolobuild/Experiments/YOLO/docker
 $ ssh edgeuser@edgeaddress
 $ cd /home/pi/defog/yolobuild/Experiments/YOLO/docker
-$ . twousers.sh 0 0 | sudo tee filename.txt
+$ . 50users.sh 0 0 | sudo tee filename.txt
 ```
 
 Repeat the above for other users and the same procedure is to be followed for other applications. 
@@ -33,15 +33,34 @@ Repeat the above for other users and the same procedure is to be followed for ot
 Sometimes the volumes are not mounted to docker containers and an error is thrown that "cannot find mnt/config and mnt/assets"
 To overcome this error I manually SSH into edge node and go to the docker scripts directory for applications on edge node (for instance,for yolo it is */home/pi/defog/yolobuild/Experiments/YOLO/docker*) and execute *. runedge.sh*. 
 
+
 Dont forget to pass the parameters to the runedge.ssh
+
 - For YOLO:   . runedge.sh 0 0 
+
 - For PocketSphinx:   . runedge.sh 1 0 
+
 - For Aeneas:   . runedge.sh 2 0 
 
-Sample Code for running YOLO 
+The first parameter (0,1 and 2) above denote the application to be benchmarked and the second parameter (0, 0 and 0) means the deployment mode - Cloud mode, Edge Mode or Cloud/Edge mode. Since we are only dealing with the edge deployment mode here, it is always going to be '0' here.
+
+Sample Code for running YOLO:
 ```
 $ ssh edgeuser@edgeaddress
 $ cd /home/pi/defog/yolobuild/Experiments/YOLO/docker
 $ . runedge.sh 0 0 | sudo tee filename.txt
 ```
 
+Sample Code for running PocketSphinx:
+```
+$ ssh edgeuser@edgeaddress
+$ cd /home/pi/defog/psphinxbuild/Experiments/Psphinx/docker
+$ . runedge.sh 1 0 | sudo tee filename.txt
+```
+
+Sample Code for running Aeneas:
+```
+$ ssh edgeuser@edgeaddress
+$ cd /home/pi/defog/aeneasbuild/Experiments/Aeneas/docker
+$ . runedge.sh 2 0 | sudo tee filename.txt
+```
